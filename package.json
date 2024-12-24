@@ -1,0 +1,70 @@
+{
+  "name": "my-react-app",
+  "version": "1.0.0",
+  "description": "A simple React.js application",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "prettify": "prettier --write .",
+    "deploy": "npm run build && aws s3 sync ./build s3://my-bucket-name"
+  },
+  "keywords": [
+    "react",
+    "frontend",
+    "web-app"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "css-select": "^5.1.0",
+    "postcss": "^8.4.49",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.4.1",
+    "redux": "^4.1.0",
+    "resolve-url-loader": "^5.0.0",
+    "svgo": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.4.1",
+    "react-scripts": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevOpsProjectFinal/masterrepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevOpsProjectFinal/masterrepo/issues"
+  },
+  "homepage": "https://github.com/DevOpsProjectFinal/masterrepo/#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
